@@ -415,6 +415,10 @@ footer p, a {
     gap: 20px;
 }
 
+.additional-information-footer-speke ul li a:hover {
+    color: var(--color-blue);
+}
+
 .download-the-app {
     display: flex;
     flex-direction: row;
