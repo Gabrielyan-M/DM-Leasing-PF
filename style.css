@@ -1,0 +1,849 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(transfonter.org-20241008-120508/Inter18pt-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(transfonter.org-20241008-120508/Inter18pt-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --color-white: #FFFFFF;
+    --color-blue: #0066FF;
+    --color-dark: #151515;
+    --color-dark-white: #E8E8E8;
+
+   --container-width: 1200px;
+}  
+
+
+
+body {
+    margin: 0px;
+}
+
+footer{
+    background-color: var(--color-dark);
+}
+
+ul, ol, ul li, ol li {
+    padding: 0px;
+    margin: 0px;
+
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    text-align: left;
+    margin: 0px;
+    
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+/* header (can copy*) */
+ 
+.header-block{
+    position: relative;
+
+    height: 100dvh;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(pic/backgroundDM.png);
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.header-container {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.header-link ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-link ul li:not(:first-child) {
+    margin-left: 35px;
+}
+
+.header-link ul li a {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--color-white);
+
+    transition: color 0.15s ease;
+}
+.header-link ul li a:hover {
+    color: var(--color-dark-white);
+}
+
+
+.burger-button {
+    background: none;
+    border: 0px;
+    width: 30px;
+    height: 19px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.burger-line {
+    height: 3px;
+    background-color: white;
+}
+
+.background-links {
+    display: none;
+}
+
+
+/* header (can copy*) */
+
+
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 14vh;
+}
+
+.welcome-section h1 {
+    font-size: 8.5vh;
+    color: var(--color-white);
+}
+
+
+.welcome-section button {
+    width: 430px;
+    height: 90px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-white);
+
+    background-color: var(--color-dark);
+    border: none;
+    padding: 0px;
+    margin-top: 38px;
+
+    transition: 0.2s;
+}
+.welcome-section button:hover {
+    background-color: var(--color-blue);
+
+}
+
+
+.skroll-line-block {
+    position: absolute;
+    bottom: 8.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.skroll-line-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.scroll-line {
+    width: 120px;
+    height: 6px;
+    background-color: var(--color-dark);
+    margin: 0px 30px;
+    border: none;
+}
+
+.scroll-line-active {
+    background-color: var(--color-white);    
+}
+
+
+
+
+
+
+.why-leale-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    padding: 0px 20px;
+}
+
+.answers-to-the-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.answers-to-the-question div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 323px;
+    justify-content: space-between;
+}
+
+
+.answers-to-the-question div img {
+    width: 150px;
+}
+.answers-to-the-question div h3 {
+    font-size: 24px;
+}
+
+
+
+
+
+.leasing-work-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.leasing-work-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 594px;
+}
+.leasing-work-section-container h2 {
+    margin-bottom: 50px;
+}
+
+.defining-the-rules-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.defining-the-rules-section-container h3 {
+    margin: 50px 0px;
+    font-size: 24px;
+}
+
+.defining-the-rules-section-container ol {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 70px;
+    width: 510px;
+}
+
+.defining-the-rules-section-container ol li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 140px;
+    align-items: center;
+}
+
+.defining-the-rules-section-container ol li img {
+    width: 100px;
+}
+
+.welcome-to-dm-leasing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.welcome-to-dm-leasing h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.video-link-block {
+
+    margin-top: 50px;
+}
+
+.video-link iframe{
+    width: 1000px;
+    height: 500px;
+}
+
+/* video in iframe */
+.video-stream {
+    width: 1000px;
+}
+
+
+
+
+
+.important-things-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0px;
+}
+.important-things-section h2 {
+    margin-bottom: 20px;
+}
+.important-factors-paragraph {
+    width: 580px;
+}
+
+.important-things-section-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.important-factors {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.important-factors div {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 233px;
+    flex-direction: column;
+}
+
+
+
+/* footer (can copy) */
+
+footer {
+    padding: 50px 20px 32px;
+}
+
+footer p, a {
+    color: var(--color-white);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-information-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1020px;
+}
+
+.additional-information-footer-speke h2 {
+    color: var(--color-white);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.additional-information-footer-speke ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.download-the-app {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.legal-disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;    
+}
+
+.legal-disclaimer p {
+    font-size: 12px;
+    width: 100%;
+    max-width: 806px;
+    text-align: center;
+}
+
+.privacy-policy {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* footer (can copy*) */
+
+
+
+@media screen and (max-width: 1100px) {
+
+    p {
+        font-size: 15px;
+    }
+
+
+
+
+
+
+    .header {
+        margin-top: 35px;
+    }
+
+    .header-container {
+        max-width: 850px;
+        margin: 0px 20px;
+    }
+
+    .header-logo img {
+        width: 85%;
+    }
+
+    .header-link a {
+        font-size: 14px;
+    }
+
+    .welcome-section {
+        margin-top: 12vh;
+    }
+
+    .welcome-section h1 {
+        font-size: 80px;
+    }
+
+    .welcome-section button {
+        width: 330px;
+        height: 70px;
+        font-size: 28px;
+        margin-top: 24px;
+    }
+
+    .skroll-line-block {
+        bottom: 6.5vh;
+    }
+    
+    .scroll-line {
+        width: 90px;
+    }
+
+
+
+    .why-leale-section {
+        margin-top: 120px;
+    }
+
+    .why-leale-section h2 {
+    font-size: 44px;
+    }
+
+    .answers-to-the-question {
+        justify-content: center;
+        gap: 25px;
+        max-width: none;
+    }
+
+    .answers-to-the-question div {
+        width: 210px;
+        height: 290px;
+    }
+
+    .answers-to-the-question div h3 {
+        font-size: 22px;
+    }
+
+
+
+    .leasing-work-section {
+        margin-top: 120px;
+    }
+
+    .leasing-work-section-container h2 {
+        font-size: 44px;
+        margin-bottom: 40px;
+    }
+
+    .defining-the-rules-section-container h3 {
+        font-size: 22px;
+        margin: 40px 0px;
+    }
+
+    .defining-the-rules-section-container ol {
+        width: 490px;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .defining-the-rules-section-container ol li {
+        gap: 130px;
+    }
+
+    .defining-the-rules-section-container ol li img {
+        width: 90px;
+    }
+
+    .welcome-to-dm-leasing {
+        margin-top: 120px;
+    }
+
+    .welcome-to-dm-leasing h2 {
+        font-size: 44px;
+    }
+
+    .welcome-to-dm-leasing h3 {
+        font-size: 22px;
+    }
+    
+    .video-link iframe {
+        width: 850px;
+        height: 425px;
+    }
+
+
+    
+    .important-things-section {
+        margin: 120px 0px;
+    }
+
+    .important-things-section h2 {
+        font-size: 44px;
+    }
+
+    .important-things-section-cards {
+        margin-top: 40px;
+    }
+
+    .important-factors {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+
+    .additional-information-footer{
+        max-width: 870px;
+    }
+}
+@media screen and (max-width: 880px) {
+
+    .header-link-block {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .header-link {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        z-index: 900;
+    }
+
+    .header-link ul {
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 80px;
+    }
+
+    .header-link ul li a {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .background-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(0.5);
+        z-index: 800;
+    }
+
+
+
+    .burger-button {
+        display: flex;
+    }
+
+    .header-container {
+        width: 90%;
+        align-items: center;
+    }
+
+    .welcome-section {
+        margin-top: 15vh;
+    }
+
+    .welcome-section h1 {
+        font-size: 70px;
+    }
+
+    .answers-to-the-question {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+
+    .video-link iframe {
+        width: 650px;
+        height: 325px;
+    }
+
+    .additional-information-footer {
+        max-width: 630px;
+    }
+
+    .additional-information-footer-speke h2 {
+        font-size: 22px;
+    }
+
+    .additional-information-footer-speke a {
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    .header-block {
+        background-position: 40% 100%;
+    }
+
+    .header-link ul {
+        gap: 55px;
+    }
+
+
+    .header-link ul li:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .header-link ul li a {
+        font-size: 20px;
+    }
+
+    
+    .welcome-section {
+        margin-top: 80px;
+    }
+
+    .welcome-section h1 {
+        font-size: 9.5vw;
+    }
+
+    .welcome-section button {
+        height: 65px;
+        width: 250px;
+        font-size: 25px;
+    }
+
+    .scroll-line {
+        width: 60px;
+        margin: 0px 15px;
+    }
+
+
+    .why-leale-section h2 {
+        font-size: 32px;
+    }
+
+    .answers-to-the-question div {
+        width: 150px;
+        height: 310px;
+    }
+
+    .answers-to-the-question div img {
+        width: 110px;
+    }
+
+    .answers-to-the-question div h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .leasing-work-section-container {
+        width: 90%;
+    }
+
+    .leasing-work-section-container h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .defining-the-rules-section-container h3 {
+        font-size: 20px;
+    }
+
+    .defining-the-rules-section-container ol {
+        width: 360px;
+    }
+
+    .defining-the-rules-section-container ol li {
+        gap: 40px;
+    }
+
+    .defining-the-rules-section-container ol li img {
+        width: 70px;
+    }
+
+
+    .welcome-to-dm-leasing h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .welcome-to-dm-leasing h3 {
+        font-size: 22px;
+        text-align: center;        
+    }
+
+    .video-link iframe {
+        width: 96vw;
+        height: 190px;
+    }
+
+    
+    .important-things-section h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .important-factors-paragraph {
+        width: 320px;
+    }
+
+    .important-factors {
+        grid-template-columns: 320px;
+        
+    }
+
+    .important-factors div {
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+
+    .additional-information-footer {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        justify-content: center;
+        gap: 60px 30px;
+    }
+
+    .additional-information-footer-speke h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .additional-information-footer-speke ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .download-the-app {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .privacy-policy {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+
+}
+
