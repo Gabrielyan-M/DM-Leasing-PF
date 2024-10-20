@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(transfonter.org-20241008-120508/Inter18pt-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(transfonter.org-20241008-120508/Inter18pt-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --color-white: #FFFFFF;
+    --color-blue: #0066FF;
+    --color-dark: #151515;
+    --color-dark-white: #E8E8E8;
+
+   --container-width: 1200px;
+}  
+
+
+
+body {
+    margin: 0px;
+}
+
+footer{
+    background-color: var(--color-dark);
+}
+
+ul, ol, ul li, ol li {
+    padding: 0px;
+    margin: 0px;
+
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    text-align: left;
+    margin: 0px;
+    
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+/* header (can copy*) */
+ 
+.header-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background-color: var(--color-dark);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.header-link ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-link ul li:not(:first-child) {
+    margin-left: 35px;
+}
+
+.header-link ul li a {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--color-white);
+
+    transition: color 0.15s ease;
+}
+
+.header-link ul li a:is(
+    .pre-owned-cars-link,
+    .finance,
+    .lease-vs-buy-link) {
+    color: var(--color-blue);
+}
+
+.header-link ul li a:hover {
+    color: var(--color-blue);
+}
+
+
+.burger-button {
+    background: none;
+    border: 0px;
+    width: 30px;
+    height: 19px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.burger-line {
+    height: 3px;
+    background-color: white;
+}
+
+.background-links {
+    display: none;
+}
+
+
+/* header (can copy*) */
+
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px 0px 300px;
+}
+.block h1 {
+    font-size: 6vw;
+}
+
+.available-sections {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.available-sections h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 44px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.available-sections a {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: 1.5px underline black ;
+    color: var(--color-dark);
+    transition: color 0.15s ease;
+}
+.available-sections a:hover {
+    color: var(--color-blue);
+}
+
+
+
+
+
+
+
+/* footer (can copy) */
+
+footer {
+    padding: 50px 20px 32px;
+}
+
+footer p, 
+footer a {
+    color: var(--color-white);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-information-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1020px;
+}
+
+.additional-information-footer-speke h2 {
+    color: var(--color-white);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.additional-information-footer-speke ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.additional-information-footer-speke ul li a:hover {
+    color: var(--color-blue);
+}
+
+
+
+.download-the-app {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.legal-disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;    
+}
+
+.legal-disclaimer p {
+    font-size: 12px;
+    width: 100%;
+    max-width: 806px;
+    text-align: center;
+}
+
+.privacy-policy {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* footer (can copy*) */
+
+
+
+@media screen and (max-width: 1100px) {
+
+    p {
+        font-size: 15px;
+    }
+
+
+
+    .header-container {
+        max-width: 850px;
+        margin: 0px 20px;
+    }
+
+    .header-logo img {
+        width: 85%;
+    }
+
+    .header-link a {
+        font-size: 14px;
+    }
+
+
+    .block h1 {
+        font-size: 7vw;
+    }
+
+    .available-sections {
+        gap: 20px;
+    }
+
+    .available-sections h2 {
+        font-size: 36px;
+    }
+
+    .available-sections a {
+        font-size: 28px;
+    }
+
+
+    .additional-information-footer{
+        max-width: 870px;
+    }
+}
+@media screen and (max-width: 880px) {
+
+    .header-block {
+        height: 120px;
+    }
+
+    .header-link-block {
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .header-link {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        z-index: 900;
+    }
+
+    .header-link ul {
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 80px;
+    }
+
+    .header-link ul li a {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .background-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(0.5);
+        z-index: 800;
+    }
+
+
+
+    .burger-button {
+        display: flex;
+    }
+
+    .header-container {
+        width: 90%;
+        align-items: center;
+    }
+
+
+    .available-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .available-sections h2 {
+        margin: 0px 0px 20px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .additional-information-footer {
+        max-width: 630px;
+    }
+
+    .additional-information-footer-speke h2 {
+        font-size: 22px;
+    }
+
+    .additional-information-footer-speke a {
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    .header-block {
+        height: 100px;
+    }   
+
+    .header-block {
+        background-position: 40% 100%;
+    }
+
+    .header-link ul {
+        gap: 55px;
+    }
+
+
+    .header-link ul li:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .header-link ul li a {
+        font-size: 20px;
+    }
+
+    
+    .block h1 {
+        font-size: 13vw;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    .additional-information-footer {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        justify-content: center;
+        gap: 60px 30px;
+    }
+
+    .additional-information-footer-speke h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .additional-information-footer-speke ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .download-the-app {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .privacy-policy {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+
+}
