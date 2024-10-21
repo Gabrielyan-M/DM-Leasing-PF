@@ -204,7 +204,6 @@ article {
     width: 270px;
     border: var(--color-blue) solid 1px;  
     overflow: hidden;
-    background-color: #ababab;
 }
 
 .card-img{
@@ -218,6 +217,7 @@ article {
 .card-car img {
     width: 100%;
     transition: 0.3s ease;
+    background-color: #ababab;
 }
 .card-car:hover {
     img{
