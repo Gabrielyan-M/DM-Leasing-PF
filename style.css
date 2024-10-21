@@ -173,7 +173,10 @@ p {
 }
 
 
-.welcome-section button {
+.welcome-section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 430px;
     height: 90px;
 
@@ -188,7 +191,7 @@ p {
 
     transition: 0.2s;
 }
-.welcome-section button:hover {
+.welcome-section a:hover {
     background-color: var(--color-blue);
 
 }
