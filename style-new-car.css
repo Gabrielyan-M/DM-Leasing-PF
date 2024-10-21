@@ -204,6 +204,7 @@ article {
     width: 270px;
     border: var(--color-blue) solid 1px;  
     overflow: hidden;
+    background-color: #ababab;
 }
 
 .card-img{
