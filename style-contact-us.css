@@ -234,6 +234,29 @@ p {
     opacity: 0.5;
 }
 
+.submit-button {
+    width: 223px;
+    height: 47px;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+    margin-top: 70px;
+
+    color: var(--color-white);
+
+    background-color: var(--color-dark);
+    border: none;
+
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-blue);
+}
+
 
 .show-more-batton {
     width: 223px;
