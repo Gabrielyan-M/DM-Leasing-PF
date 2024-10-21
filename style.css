@@ -497,7 +497,7 @@ footer p, a {
         font-size: 80px;
     }
 
-    .welcome-section button {
+    .welcome-section a {
         width: 330px;
         height: 70px;
         font-size: 28px;
@@ -731,7 +731,7 @@ footer p, a {
         font-size: 9.5vw;
     }
 
-    .welcome-section button {
+    .welcome-section a {
         height: 65px;
         width: 250px;
         font-size: 25px;
